@@ -5,3 +5,4 @@ def localizar(V,k):
     return False
 vetor = [1,2,5,4,7,6]
 print(localizar(vetor,6))
+#O(n)
