@@ -2,6 +2,7 @@ import time
 from mergeSort import mergeSort
 from quickSort import quickSort
 from heapSort import heapSort
+from countingSort import countingSort
 
 vet = []
 for i in range(999,0,-1):
@@ -19,3 +20,7 @@ inicio = time.process_time()
 heapSort(vet)
 fim = time.process_time()
 print("heap ",fim-inicio)
+inicio = time.process_time()
+countingSort(vet)
+fim = time.process_time()
+print("count ",fim-inicio)

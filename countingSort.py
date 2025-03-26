@@ -16,11 +16,14 @@ def countingSort(V):
     return saida
 
 def maxVal(V):
+
     max = V[0]
     for i in V:
         if i > max:
             max = i
     return max
-teste = [7,9,7,5,3,2,8,5,4,12,10,10,6]
-print(countingSort(teste))
+if __name__ == "__main__":
+    teste = [7,9,7,5,3,2,8,5,4,12,10,10,6]
+    print(countingSort(teste))
+
 #bgl é loco
