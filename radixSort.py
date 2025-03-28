@@ -16,8 +16,8 @@ def countingSort(V,x):
     for l in range(len(v)):
         saida.append(0)
     for m in range(len(v)-1,-1,-1):
-        saida[m] = acu.index(m)
-        acu[saida[m]] -= 1
+        saida[acu[v[m]]] = V[m]
+        acu[v[m]] -= 1
     return saida
 
 def get_qtd_digitos(num):
@@ -32,10 +32,11 @@ def get_digito(num,pos):
     
 def radixSort(V):
     for i in range(get_qtd_digitos(maxVal(V))):
-        countingSort(V,i)
+        V = countingSort(V,i)
+    return V
     
 
 
 if __name__ == "__main__":
-    teste = [7,9,7,5,3,2,8,5,4,12,10,10,6]
+    teste = [73,19,37,25,13,21]
     print(radixSort(teste))
