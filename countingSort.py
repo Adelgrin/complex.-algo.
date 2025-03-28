@@ -2,7 +2,7 @@ def countingSort(V):
     count = []
     for i in range(maxVal(V)+1):
         count.append(0)
-    acu = [-1]
+    acu = [count[0]-1]
     for j in V:
         count[j] += 1
     for k in range(1,len(count)):
