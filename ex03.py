@@ -30,6 +30,7 @@ def bubble_sort(V,n):
 errado = []
 for x in range(10000,0,-1):
     errado.append(x)
+#NOTE: Tempo de execucao para 1000 elementos no pior caso para os 3 tipos de sort (insertion, selection, bubble)
 inicio = time.process_time()
 insertion_sort(errado[:],len(errado))
 fim = time.process_time()

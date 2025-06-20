@@ -6,8 +6,8 @@ from countingSort import countingSort
 from radixSort import radixSort
 
 vet = []
-for i in range(999,0,-1):
-    vet.append(i)
+for i in range(998,0,-1):
+   vet.append(i)
 
 inicio = time.process_time()
 mergeSort(vet[:],0,len(vet)-1)
