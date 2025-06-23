@@ -1,6 +1,6 @@
 def countingSort(V):
     count = []
-    for i in range(maxVal(V)+1):
+    for _ in range(maxVal(V)+1):
         count.append(0)
     acu = [count[0]-1]
     for j in V:

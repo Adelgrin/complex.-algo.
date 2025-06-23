@@ -9,22 +9,31 @@ vet = []
 for i in range(998,0,-1):
    vet.append(i)
 
+#NOTE: analise do mergeSort
 inicio = time.process_time()
 mergeSort(vet[:],0,len(vet)-1)
 fim = time.process_time()
 print("merge ",fim-inicio)
+
+#NOTE: analise do quick
 inicio = time.process_time()
 quickSort(vet[:],0,len(vet)-1)
 fim = time.process_time()
 print("quick ",fim-inicio)
+
+#NOTE: analise do heapSort
 inicio = time.process_time()
 heapSort(vet[:])
 fim = time.process_time()
 print("heap ",fim-inicio)
+
+#NOTE: analise do countingSort
 inicio = time.process_time()
 countingSort(vet[:])
 fim = time.process_time()
 print("count ",fim-inicio)
+
+#NOTE: analise do radixSort
 inicio = time.process_time()
 radixSort(vet[:])
 fim = time.process_time()
